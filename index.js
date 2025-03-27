@@ -22,7 +22,7 @@ app.get("/readings", function(req, res) {
   fs.readFile("views/readings.html", function (readError, data) {
     if (readError) throw readError;
     
-    res.send(mustache.render(data.toString(), { name: "casa heleine"} ));
+    res.send(mustache.render(data.toString(), { name: "casa heleine" } ));
   });
 });
 
