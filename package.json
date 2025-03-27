@@ -1,0 +1,25 @@
+{
+  "name": "casaheleine",
+  "version": "0.0.1",
+  "description": "casaheleine setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@heroku.com:casaheleine.git"
+  },
+  "keywords": [
+    "home",
+    "automation"
+  ],
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "1.4.26",
+    "mustache": "^3.1.0",
+    "underscore": "1.7.0"
+  },
+  "author": "Henry Heleine",
+  "license": "BSD"
+}

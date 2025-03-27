@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Casa Heleine Temperature</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+      
+    <!-- Secondary option for charts -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js"></script> -->
+
+  </head>
+  <body>
+    Coming soon readings for {{ name }}
+    <div id="readings"></div>
+    
+    <script>
+      $(function () {
+        $("#readings").highcharts({
+          title: {
+            text: "Daily Temperature at Casa Heleine"
+          },
+          subtitle: {
+            text: "Readings from tessel.io climate module"
+          },
+          xAxis: {
+            categories: ["0000", "0100", "0200", "0300", "0400", "0500", "0600", "0700", "0800", "0900", "1000", "1100",
+                         "1200", "1300", "1400", "1500", "1600", "1700", "1800", "1900", "2000", "2100", "2200", "2300"]
+          },
+          yAxis: {
+            title: {
+                text: "Temperature (°C)"
+            }
+          },
+          tooltip: {
+            valueSuffix: "°C"
+          },
+          series: [{
+            name: "Temperature",
+            data: [25.4, 25.2, 24.8, 24.3, 24.1, 24.6, 25.2, 25.7, 26.2, 27.2, 28.3, 29.4, 30.0, 30.2, 30.1, 29.7, 29.2, 29.0, 28.6, 28.3, 28.0, 27.7, 27.3, 26.2]
+          }]
+        });
+      });
+    </script>
+  </body>
+</html>
