@@ -18,7 +18,10 @@
     "express": "^4.17.1",
     "mongodb": "1.4.26",
     "mustache": "^3.1.0",
-    "underscore": "1.7.0"
+    "underscore": "1.7.0",
+    "climate-si7020": "0.1.1",
+    "camera-vc0706": "0.1.7",
+    "wifi-cc3000": "0.0.1"
   },
   "author": "Henry Heleine",
   "license": "BSD"
